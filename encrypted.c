@@ -55,33 +55,33 @@ int main()
 
     char str[100];
     int c=0,chk=0;
-    printf("Enter to print ");
+    printf("Enter Data to encrypt: ");
     fgets(str,100,stdin);
     c=strlen(str);
     write(str);
-    printf("\nIncreasing protection to level 1     ");
+    printf("\nIncreasing protection to level 1\t\t");
     encryption1(str,c);
-    printf("\ndo u further  .... press1   ");
+    printf("\nPress 1 to increase protection level\t\t");
     scanf("%d",&chk);
     if(chk==1)
     {
-            printf("\nIncreasing protection to level 2    ");
+            printf("\nIncreasing protection to level 2\t\t");
             encryption2(str,c);
 
         chk=0;
-        printf("\ndo u further  .... press 1   ");
+        printf("\nPress 1 to increase protection level\t\t");
         scanf("%d",&chk);
         if(chk==1)
         {
-                printf("\nIncreasing protection to level 3    ");
+                printf("\nIncreasing protection to level 3\t\t");
                 encryption2(str,c);
 
             chk=0;
-            printf("\ndo u further  .... press 1   ");
+            printf("\nPress 1 to increase protection level\t\t");
             scanf("%d",&chk);
                 if(chk==1)
                 {
-                    printf("\nIncreasing protection to level 4   ");
+                    printf("\nIncreasing protection to level 4\t\t");
                     encryption1(str,c);
                 }
         }
